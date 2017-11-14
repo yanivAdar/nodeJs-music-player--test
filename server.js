@@ -41,5 +41,5 @@ async.waterfall([
     if (!err) {
         console.log('all connected');
     }
-    return (err);
+    return (console.log(err));
 });
