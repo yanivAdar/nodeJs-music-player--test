@@ -31,7 +31,7 @@ server.use(express.static('public'));
 // Student.remove({ name: abc }, err => {
 //     console.log(data);
 // });
-
+console.log('ok');
 const connectToDatabase = cb => mongoose.connect('mongodb://localhost:27017/playlist', { useMongoClient: true }, err => cb(err))
 const connectToServer = cb => server.listen(80, (err) => cb(err));
 async.waterfall([
